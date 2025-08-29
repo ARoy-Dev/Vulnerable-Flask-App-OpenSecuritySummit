@@ -109,9 +109,9 @@ def pnf(e):
     <h3>%s</h3>
     </body>
     </html>
-    ''' % request.url
+    '''
 
-    return render_template_string(template, dir = dir, help = help, locals = locals),404
+    return render_template_string(template, url=request.url, dir=dir, help=help, locals=locals), 404
 
 def has_no_empty_params(rule):
     default = rule.defaults if rule.defaults is not None else ()
