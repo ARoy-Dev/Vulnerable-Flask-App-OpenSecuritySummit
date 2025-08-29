@@ -106,7 +106,7 @@ def pnf(e):
     </head>
     <body>
     <h1>Oops that page doesn't exist!!</h1>
-    <h3>{{ url }}</h3>
+    <h3>%s</h3>
     </body>
     </html>
     '''
